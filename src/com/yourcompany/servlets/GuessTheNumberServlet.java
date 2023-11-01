@@ -11,6 +11,7 @@ public class GuessTheNumberServlet extends HttpServlet {
     private final int maxAttempts = 10;
 
     public void init() throws ServletException {
+        System.out.println("hi");
         // Initialize the game when the servlet is started
         Random random = new Random();
         secretNumber = random.nextInt(100) + 1; // Generate a random number between 1 and 100
